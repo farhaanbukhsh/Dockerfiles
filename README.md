@@ -22,3 +22,18 @@ Inside the container run :
 
 
 Page will be served on `localhost:8888`
+
+
+## Pagure
+
+- Clone pagure on the machine
+
+- Add this `Dockefile` in the same repo 
+
+- Then run the docker build command mention in the file
+
+- Run the `docker` container as: 
+
+    `sudo docker run --rm --name "pagure" -it -p 5000:5000 pagure:0.0.1 bash`
+
+- Inside the container run `./runserver.py --host 0.0.0.0`
